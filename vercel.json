@@ -1,28 +1,5 @@
 {
   "rewrites": [
     { "source": "/api/:path*", "destination": "https://comment.3ptw.blog/:path*" }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "https://3ptw.blog"
-        },
-        {
-          "key": "Access-Control-Allow-Credentials",
-          "value": "true"
-        },
-        {
-          "key": "Access-Control-Allow-Methods",
-          "value": "GET,POST,OPTIONS,PUT,DELETE"
-        },
-        {
-          "key": "Access-Control-Allow-Headers",
-          "value": "X-Requested-With,Content-Type,Authorization,Origin,Accept"
-        }
-      ]
-    }
   ]
 }
